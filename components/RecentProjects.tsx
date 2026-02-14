@@ -7,7 +7,7 @@ import { PinContainer } from "./ui/3d-pin";
 
 const RecentProjects = () => {
   return (
-    <section className="py-20" id='projects'>
+    <section className="py-20" id="projects">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
@@ -29,7 +29,7 @@ const RecentProjects = () => {
                 <img
                   src={img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 w-full h-full object-fill object-center"
                 />
               </div>
 
