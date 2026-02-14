@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🔗 Live Preview
 
-## Getting Started
+Add your deployed link here
+https://your-portfolio-url.com
 
-First, run the development server:
+## 👨‍💻 About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I'm a Fullstack Web Developer specializing in modern frontend architecture using React, Next.js, and TypeScript, with backend experience in Node.js, Express, Laravel, and SQL databases.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+My focus areas include:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Scalable frontend architecture
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Performance optimization
 
-## Learn More
+Clean component design systems
 
-To learn more about Next.js, take a look at the following resources:
+AI integration into web applications
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Maintainable backend APIs and authentication systems
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This portfolio reflects both my technical capabilities and my long-term direction toward building intelligent, production-grade web systems.
 
-## Deploy on Vercel
+## 🛠 Tech Stack
+Frontend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+React
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Next.js
+
+TypeScript
+
+TailwindCSS
+
+Framer Motion
+
+Git & GitHub
+
+Component-driven architecture
+
+Responsive & mobile-first design
+
+✨ Features
+
+Fully responsive modern UI
+
+Modular component structure
+
+Clean and scalable project architecture
+
+Optimized performance practices
+
+Smooth animations and transitions
+
+Structured data-driven content
+
+📁 Project Structure
+├── components
+├── utils
+├── data
+├── public
+└── app
+
+The data/index.ts file powers the dynamic content of the portfolio, allowing structured scalability without hardcoding content inside components.
+
+🧠 What This Portfolio Demonstrates
+
+This project highlights:
+
+Advanced UI composition
+
+Structured data modeling
+
+Clean separation of concerns
+
+Reusable components
+
+Strong understanding of React render flow
+
+Practical real-world frontend architecture
