@@ -7,7 +7,7 @@ function Experience() {
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-        My
+        My {' '}
         <span className="text-purple">Work Experience</span>
       </h1>
 
