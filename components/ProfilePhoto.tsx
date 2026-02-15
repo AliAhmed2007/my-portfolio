@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function ProfilePhoto() {
@@ -17,9 +18,12 @@ function ProfilePhoto() {
 
       {/* Image container */}
       <div className="relative rounded-full p-[3px] bg-gradient-to-tr from-blue-500 via-purple-500 to-cyan-400 shadow-[0_0_30px_rgba(99,102,241,0.5)]">
-        <img
+        <Image
           src="/profile-photo.webp"
           alt="Ali Ahmed - Profile Photo"
+          width={160}
+          height={160}
+          quality={100}
           className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-top border-2 border-black-100"
         />
       </div>

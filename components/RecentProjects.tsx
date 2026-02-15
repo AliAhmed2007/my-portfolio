@@ -4,6 +4,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
@@ -24,10 +25,12 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image width={768} height={400} src="/bg.png" alt="bgimg" />
                 </div>
-                <img
+                <Image
                   src={img}
+                  width={768}
+                  height={400}
                   alt="cover"
                   className="z-10 absolute bottom-0 w-full h-full object-fill object-center"
                 />
@@ -57,7 +60,13 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <Image
+                        width={40}
+                        height={40}
+                        src={icon}
+                        alt="icon5"
+                        className="p-2"
+                      />
                     </div>
                   ))}
                 </div>

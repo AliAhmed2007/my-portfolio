@@ -4,6 +4,7 @@ import { Spotlight } from "./ui/spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import MagicButton from "./MagicButton";
 import ProfilePhoto from "./ProfilePhoto";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -57,19 +58,20 @@ const Hero = () => {
           <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            duration={1}
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi! I&apos;m Ali Ahmed, a Next.js Developer based in Egypt.
           </p>
 
-          <a href="#about">
+          <Link href="#about">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

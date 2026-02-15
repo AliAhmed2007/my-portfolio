@@ -2,13 +2,13 @@ import { workExperience } from "@/data";
 import { space } from "postcss/lib/list";
 import React from "react";
 import { Button } from "./ui/moving-border";
+import Image from "next/image";
 
 function Experience() {
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-        My {' '}
-        <span className="text-purple">Work Experience</span>
+        My <span className="text-purple">Work Experience</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
@@ -20,7 +20,9 @@ function Experience() {
             duration={Math.floor(Math.random() * 10000) + 10000}
           >
             <div className="flex lg:flex-row flex-col lg:items-center px-3 py-6 md:p-5 lg:p-10 gap-2">
-              <img
+              <Image
+                width={128}
+                height={128}
                 src={card.thumbnail}
                 alt={card.thumbnail}
                 className="lg:w-32 md:w-20 w-16"

@@ -10,6 +10,8 @@ import MagicButton from "../MagicButton";
 import { cn } from "@/utils/cn";
 import GridGlobe from "../GridGlobe";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
+import Image from "next/image";
+import { FaDownload } from "react-icons/fa6";
 
 export const BentoGrid = ({
   className,
@@ -54,6 +56,7 @@ export const BentoGridItem = ({
   const rightLists = ["ReactJS", "NextJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
+  const [download, setDownload] = useState(false);
 
   const defaultOptions = {
     loop: copied,
@@ -68,6 +71,16 @@ export const BentoGridItem = ({
     const text = "ali.3hmed2007@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/cv.pdf";
+    link.download = "Ali_Ahmed_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setDownload(true);
   };
 
   return (
@@ -89,9 +102,11 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
+              width={600}
+              height={400}
               className={cn(imgClassName, "object-cover object-center ")}
             />
           )}
@@ -102,10 +117,11 @@ export const BentoGridItem = ({
           } `}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
-              //   width={220}
+              width={220}
+              height={220}
               className="object-cover object-center w-full h-full"
             />
           )}
@@ -179,17 +195,24 @@ export const BentoGridItem = ({
                   copied ? "block" : "block"
                 }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
-
-              <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
+              <div className="flex flex-col items-center justify-center gap-3 lg:flex-row">
+                <MagicButton
+                  title={copied ? "Email is Copied!" : "Copy my email address"}
+                  icon={<IoCopyOutline />}
+                  position="left"
+                  handleClick={handleCopy}
+                  otherClasses="!bg-[#161A31]"
+                />
+                <MagicButton
+                  title={download ? "CV Downloaded!" : "Download my CV"}
+                  icon={<FaDownload />}
+                  position="left"
+                  handleClick={handleDownload}
+                  otherClasses="!bg-[#161A31]"
+                />
+              </div>
             </div>
           )}
         </div>
